@@ -16,6 +16,7 @@ function renderCountdown() {
   let hour = (minutes / 60) | 0;
   let rem_min = minutes % 60;
   let rem_sec = seconds % 60;
+  console.log(hour);
 
   const remaining = hour + ':' + rem_min + ':' + rem_sec;
   return (countdownDisplay.innerHTML = remaining);
