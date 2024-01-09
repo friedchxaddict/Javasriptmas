@@ -16,7 +16,6 @@ function renderCountdown() {
   let hour = (minutes / 60) | 0;
   let rem_min = minutes % 60;
   let rem_sec = seconds % 60;
-  console.log(hour);
 
   const remaining = hour + ':' + rem_min + ':' + rem_sec;
   return (countdownDisplay.innerHTML = remaining);
@@ -28,4 +27,12 @@ function renderCountdown() {
 
 renderCountdown();
 
-//this is just so I can push something for the time being
+var hero = {
+  _name: 'John Doe',
+  getSecretIdentity: function () {
+    return this._name;
+  },
+};
+var stoleSecretIdentity = hero.getSecretIdentity();
+console.log(stoleSecretIdentity);
+console.log(hero.getSecretIdentity());
